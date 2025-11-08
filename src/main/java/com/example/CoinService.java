@@ -39,7 +39,14 @@ public class CoinService {
             String line = input.nextLine().trim();
             
             if (line.matches("-?\\d+")) {
-                quantity = Integer.parseInt(line);
+                int newQuantity = Integer.parseInt(line);
+
+                if (newQuantity < 0) {
+                    System.out.println("Please pick a positive integer!");
+                    continue;
+                }
+
+                quantity = newQuantity;
             } else {
                 System.out.println("Please pick an integer!");
                 continue;
