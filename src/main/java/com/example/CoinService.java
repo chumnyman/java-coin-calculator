@@ -22,7 +22,7 @@ public class CoinService {
             .addCoins(getInput(CoinType.QUARTER))
             .getTotalValue();
 
-        System.out.println("Your total is: $" + total);
+        System.out.println(String.format("Your total is: $%.2f", total));
 
         isStarted = false;
     }
