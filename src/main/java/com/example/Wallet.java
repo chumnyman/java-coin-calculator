@@ -24,7 +24,7 @@ public class Wallet {
         return total;
     }
 
-    public int getCoinCount() {
+    public int getCoinPileCount() {
         return coinPiles.size();
     }
 }
